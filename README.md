@@ -312,7 +312,7 @@ int main(int argc, char **argv)
     printf("initialization: \t %f sec\n", iElaps);
 
     // add matrix at host side for result checks
-    iStart = seconds();
+    iStart = seconds(); 
     sumMatrixOnHost(A, B, hostRef, nx, ny);
     iElaps = seconds() - iStart;
     printf("sumMatrix on host:\t %f sec\n", iElaps);
